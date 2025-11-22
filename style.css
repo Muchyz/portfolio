@@ -235,20 +235,12 @@ main{ position:relative; z-index:5; padding-top:110px; }
   padding:0;
   background:transparent;
   cursor:pointer;
-}
-.video-placeholder img{
-  width:100%;
-  height:auto;
-  display:block;
-  border-radius:8px;
-  object-fit:cover;
-  background:#000;
+  height:220px; /* provide a visible target so user knows to click */
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 .video-placeholder .play-icon{
-  position:absolute;
-  left:50%;
-  top:50%;
-  transform:translate(-50%,-50%);
   font-size:44px;
   background:rgba(0,0,0,0.45);
   color:white;
@@ -320,6 +312,7 @@ main{ position:relative; z-index:5; padding-top:110px; }
   .testimonial-card{ flex:0 0 92% }
   .video-player video,
   .video-player iframe{ height:auto; max-height:320px }
+  .video-placeholder{ height:180px }
 }
 
 /* tiny screens */
@@ -378,4 +371,4 @@ main{ position:relative; z-index:5; padding-top:110px; }
 .main-hero {
   margin-top: -50px;   /* pull it closer to the logo */
   padding-top: 0;
-}
+  }
